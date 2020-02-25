@@ -1,8 +1,12 @@
 package com.example.crapper;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ImageView;
+import android.os.Vibrator;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,6 +14,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
-//        ImageView v = findViewById(R.id.start_text);
+    }
+
+    public void searchLocations(View view) {
+        Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+        Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        v.vibrate(5000);
+        startActivity(intent);
     }
 }

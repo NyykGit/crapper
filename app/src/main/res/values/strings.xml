@@ -2,4 +2,6 @@
     <string name="app_name">Crapper</string>
     <string name="press_the_button_to_start">Press the button to start!</string>
     <string name="todo">TODO</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_add_activity">add_activity</string>
 </resources>
