@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Crapper</string>
-    <string name="press_the_button_to_start">Press the button to start!</string>
+    <string-array name="text">
+    <item>Find toilets nearby!</item>
+    <item>Press the button!</item>
+    </string-array>
     <string name="todo">TODO</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_add_activity">add_activity</string>
